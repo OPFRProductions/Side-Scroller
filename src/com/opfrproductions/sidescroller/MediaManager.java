@@ -12,6 +12,7 @@ public class MediaManager {
 	 * Example:
 	 * BufferedImage[] terrain;
 	 */
+	BufferedImage[] terrain;
 	public static Level level1;
 	public MediaManager()
 	{
@@ -20,6 +21,7 @@ public class MediaManager {
 		 * Example:
 		 * terrain = loadSheet(MediaManager.class.getResourceAsStream("terrain.png"), 16, 16);
 		 */
+		terrain = loadSheet(MediaManager.class.getResourceAsStream("C:/Users/Oscar FirthRobertson/Pictures/New folder/Terrain.png"), 16, 16);
 		level1 = new Level(MediaManager.class.getResourceAsStream("level1.dat"));
 	}
 	public static BufferedImage load(InputStream stream)

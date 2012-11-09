@@ -43,7 +43,7 @@ public class Level {
 	private int getPiece(char charAt) {
 		if(charAt=='%') //Air
 			return 0;
-		if(charAt=='#') //Solid ground
+		if(charAt=='#') 
 			return 1;
 		return 0;
 	}
