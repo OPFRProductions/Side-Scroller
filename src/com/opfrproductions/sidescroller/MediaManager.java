@@ -21,7 +21,7 @@ public class MediaManager {
 		 * Example:
 		 * terrain = loadSheet(MediaManager.class.getResourceAsStream("terrain.png"), 16, 16);
 		 */
-		terrain = loadSheet(MediaManager.class.getResourceAsStream("C:/Users/Oscar FirthRobertson/Pictures/New folder/Terrain.png"), 16, 16);
+		terrain = loadSheet(MediaManager.class.getResourceAsStream("Terrain.png"), 20, 20); //Path is written relative to this class's position in the jar file ;). Because terrain is in the same "package" as MediaManager(Same folder), just write Terrain.png
 		level1 = new Level(MediaManager.class.getResourceAsStream("level1.dat"));
 	}
 	public static BufferedImage load(InputStream stream)
